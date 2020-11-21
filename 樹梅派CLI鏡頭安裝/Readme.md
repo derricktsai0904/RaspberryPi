@@ -4,38 +4,18 @@
 >1. 樹梅派 3B+ X 1
 >2. 鏡頭排線 X 1
 >3. CLI鏡頭 一顆
-===
+=== 
 
-## NodeMCU 腳位圖 
+>![](https://github.com/derricktsai0904/RaspberryPi/blob/main/%E6%A8%B9%E6%A2%85%E6%B4%BECLI%E9%8F%A1%E9%A0%AD%E5%AE%89%E8%A3%9D/Raspberry3B%2B.PNG?raw=true)
+>![](https://github.com/derricktsai0904/RaspberryPi/blob/main/%E6%A8%B9%E6%A2%85%E6%B4%BECLI%E9%8F%A1%E9%A0%AD%E5%AE%89%E8%A3%9D/CLI.PNG?raw=true)
 
->![](https://github.com/derricktsai0904/Arduino/blob/master/04%20NodeMCU/Blink/nodemcu_pin.PNG?raw=true)
+## 安裝步驟 :
+>1. 在 raspi-config 選取 5.interface 設定 camera 開
+>2. 將 mjpg-streamer-experimental.zip 解開壓縮到 pi 那層目錄  pi\mjpg-streamer-experimental
+>3. 執行 install.sh (在 pi 那層目錄執行  bash install.sh )
+>4. 使用 http://192.168.x.x:8080/?action=stream 查看鏡頭即時影像
+>5. 使用 http://192.168.x.x:8080/?action=snapshot 擷取目前鏡頭的圖片
 
-## LED控制電路圖
-
->![](https://github.com/derricktsai0904/Arduino/blob/master/04%20NodeMCU/Blink/NodeMCU_circuit.PNG?raw=true)
-
-## 相關函式 : 無
-
-## 程式說明
-
-[以下程式來源 ESP8266-Blink.ino ]:https://github.com/derricktsai0904/Arduino/blob/master/04%20NodeMCU/Blink/ESP8266-Blink.ino "ESP8266-Blink.ino"
-[以下程式來源 ESP8266-Blink.ino ]
-``` arduino
-#define D0 16 
-
-void setup() {
-  pinMode(D0, OUTPUT);     // Initialize the LED_BUILTIN pin as an output
-}
-
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(D0, LOW);
-  delay(1000);
-  digitalWrite(D0, HIGH);
-  delay(1000);
-}
-
-```
 
 
 
