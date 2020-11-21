@@ -13,8 +13,10 @@
 >1. 在 raspi-config 選取 5.interface 設定 camera 開
 >2. 將 mjpg-streamer-experimental.zip 解開壓縮到 pi 那層目錄  pi\mjpg-streamer-experimental
 >3. 執行 install.sh (在 pi 那層目錄執行  bash install.sh )
->4. 使用 http://192.168.x.x:8080/?action=stream 查看鏡頭即時影像
->5. 使用 http://192.168.x.x:8080/?action=snapshot 擷取目前鏡頭的圖片
+>4. 執行 run.sh (在 pi 那層目錄執行  bash run.sh )
+>5. 使用 http://192.168.x.x:8080/?action=stream 查看鏡頭即時影像
+>6. 使用 http://192.168.x.x:8080/?action=snapshot 擷取目前鏡頭的圖片
+>7. 下次再重新啟用，請從第4項開始
 
 
 
